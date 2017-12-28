@@ -1,0 +1,25 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 26
+    buildToolsVersion "26.0.2"
+
+    defaultConfig {
+        minSdkVersion 14
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+    }
+
+    lintOptions {
+        abortOnError false
+    }
+}
+
+dependencies {
+    compile ("com.quickblox:quickblox-android-sdk-messages:3.4.1" )
+
+    compile "com.android.support:design:26.1.0"
+    compile "com.github.johnkil.android-robototextview:robototextview:4.0.0"
+
+}
